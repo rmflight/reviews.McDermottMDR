@@ -17,6 +17,21 @@ After application to ser-thr binding and zinc fingers, the authors apply the met
 and the genome of a high-temperature bacteria to explore the potential of finding novel MDR genes
 that could result from lateral transfer.
 
-## Data Availability
+## Reservations
 
-The 
+### Data Availability
+
+Not all of the code / data necessary to reproduce the results are currently provided. While acknowledging that
+the primary algorithm (PILGram) is currently awaiting publication, it is not appar there are still steps that could be taken
+to providing more of the data. It should be noted that when the PILGram algorithm is published, this publication
+should be updted with references and links to make it easier for others to find. 
+
+Ways to enhance the reproducibility:
+
+* Provide the actual entries from PROSITE that were used for the positive and negative examples
+
+* Provide the actual entries for training the Zinc finger expressions
+
+* Provide the genome accession and gene annotations from the thermophilic bacteria that was annotated
+
+* Provide the list of accessions annotated as MDR's using MDRPred
