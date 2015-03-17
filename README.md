@@ -33,11 +33,20 @@ bacterium and possibly novel MDR transporters identified.
 Although I think the general claims can be justified from the text, there are some areas of concern
 that I think should be addressed. 
 
-These reservations boil down to two major ones:
+These reservations fall under these major areas:
 
 * data availability for reproducibility
+  * actual id's for positive and negative examples
 
 * lack of description in the text leading to either lack of clarity or possible misunderstandings
+  * length of generated reg-exes
+  * description of reg-exes in general
+  * justification of PP-PRE and TMR-PRE extensions to PRE, as well as match and score generation, 
+
+* weak evidence supporting a particular claim
+  * substrate specificity
+  
+Each of these reservations are further detailed below.
 
 ## Reservations
 
