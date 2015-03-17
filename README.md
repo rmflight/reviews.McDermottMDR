@@ -107,9 +107,10 @@ From the current description of them, it is also difficult to imagine how someth
 matches the PP-PRE and TMR-PRE, including the PP and TMR scores as part of the match.
 Therefore I recommend:
 
-* Having a better description of the PP and TMR scores
+* Having a better description of the PP and TMR scores in Methods
 
-* Justification for their inclusion in MDRPred. I am guessing that the accuracy drops
+* Justification for the inclusion of PP-PRE and TMR-PRE in MDRPred. Currently the only
+justification is "Because we believed ...". I would hazard a guess that the accuracy drops
 precipitously without them, but there is nothing in the text currently describing why they
 are needed.
 
@@ -120,3 +121,16 @@ are needed.
 * Example of full match for a derived PP-PRE or TMR-PRE
 
 
+## Other Simple Improvements to Text
+
+**Methods**, under PILGram, first sentence, a reference is missing to SIEVE.
+
+**Methods**, PILGram example, example grammar, spaces around symbols would greatly 
+improve the readability
+
+In **results**, actually identify the **core** of the PROSITE reg-ex that PILGram
+is able to capture, noting that PILGram drops the first and last AA in the PROSITE
+one, and adds **Q** to the set of alternatives compared to PROSITE.
+
+**Results** paragraph 2 says "Supplemental Table 1", but I believe this should be
+"Supplemental Figure 1".
