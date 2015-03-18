@@ -43,9 +43,9 @@ These reservations fall under these major areas:
   * length of generated reg-exes
   * description of reg-exes in general
   * justification of PP-PRE and TMR-PRE extensions to PRE, as well as match and score generation, 
+  * supplemental table 1 needs **more** description
 
-* weak evidence supporting a particular claim
-  * substrate specificity
+* language implying other methods are not "linguistic"
   
 Each of these reservations are further detailed below.
 
@@ -139,6 +139,27 @@ the difference between RESmall and RE??)
 that end up being used)
 
 * an indication of which are PRE, PP-PRE, and TMR-PRE
+
+### Language implying other methods are not linguistic
+
+In its current form, the abstract reads:
+
+"In this paper we describe a linguistic approach to identify ..."
+
+This implies that regular expressions in PROSITE and hidden markov models are not
+"linguistic" approaches. However, in the text, describing regular expressions used
+by PROSITE as the simplest form of grammar (regular grammars), and Hidden Markov models
+as a type of regular grammar (Introduction, paragraph 3). If these are grammars,
+then they are linguistic approaches. 
+
+In fact, from the description in the manuscript, PILGram generates regular expressions
+that in some cases are very similar to those used by PROSITE. I am unclear as to how
+generating regular expressions using PILGram is a "linguistic" approach, but aligning
+and finding common features (as in PROSITE or HMMs) is not. 
+
+I understand that PILGram is able to generate discriminative reg-exes without alignment
+first, and that is very useful (as exemplified by this manuscript), but from the current
+description that does not make it "linguistic". 
 
 ## Other Simple Improvements to Text
 
