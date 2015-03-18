@@ -37,6 +37,7 @@ These reservations fall under these major areas:
 
 * data availability for reproducibility
   * actual id's for positive and negative examples
+  * actual MDRPred code
 
 * lack of description in the text leading to either lack of clarity or possible misunderstandings
   * length of generated reg-exes
@@ -50,7 +51,7 @@ Each of these reservations are further detailed below.
 
 ## Reservations
 
-### Data Availability
+### Data & Code Availability
 
 Not all of the code / data necessary to reproduce the results are currently provided. While acknowledging that
 the primary algorithm (PILGram) is currently awaiting publication and that this is **not** the place to describe
@@ -70,6 +71,13 @@ More data that should be included:
 
 * Date of download of PROSITE data. prosite.dat on Mar 17, 2015 shows 198 positive matches for PS00125, and I'm
 assuming 2018 (hard to tell from file) positive matches for PS00028.
+
+* Lack of code: Finally, beyond the models provided in Supplemental Table 1, there is no actual code
+provided to actually create matches to either the training sequences or the thermophilic
+bacteria, or any sequence of interest. I understand not providing PILGram code and application, however this publication
+is about a "method", and I am surprised the "method" is not available as something that
+can be run by the reader of the paper. This is also disconcerting given that the
+details of calculating matches to PP-PRE's and TMR-PRE's is not very clear.
 
 ### Lack of Description
 
@@ -120,6 +128,17 @@ are needed.
 
 * Example of full match for a derived PP-PRE or TMR-PRE
 
+#### Supplemental Table 1
+
+I believe supplemental table 1 could benefit from including:
+
+* a description of what each column is beyond the title (for example, what is 
+the difference between RESmall and RE??)
+
+* a description of the PP that are included (it appears there are only 11
+that end up being used)
+
+* an indication of which are PRE, PP-PRE, and TMR-PRE
 
 ## Other Simple Improvements to Text
 
