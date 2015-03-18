@@ -35,7 +35,6 @@ These reservations fall under these major areas, ordered in what I consider most
   * actual MDRPred code
   * actual id's for positive and negative examples
 
-  
 * Weak "substrate specificity" claim
 
 * lack of description in the text leading to either lack of clarity or possible misunderstandings
