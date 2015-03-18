@@ -39,11 +39,11 @@ These reservations fall under these major areas, ordered in what I consider most
 * Weak "substrate specificity" claim
 
 * lack of description in the text leading to either lack of clarity or possible misunderstandings
-  * length of generated regexes
-  * description of regexes in general
-  * justification of PP-PRE and TMR-PRE extensions to PRE, as well as match and score generation
-  * elaboration of clustering, maybe adding to methods
-  * supplemental table 1 needs **more** description
+  * PILGram details
+  * Physiochemical Properties and TMR
+  * Elaboration of clustering
+  * Supplemental Table 1
+  * Describing REGEXE's
 
 * language implying other methods are not "linguistic"
 
@@ -77,7 +77,7 @@ More so than the "substrate specificty" claim, I think the authors would do well
 
 #### PILGram Algorithmic Details
 
-Again I acknowledge that this is not the place to detail the full inner-workings of the PILGram algorithm, and the example in the text for BMI is useful. However, most genetic algorithms have a defined chromosome length defining the solution. I would have expected an analogous situation for PILGram, in that one would have to define the **length** of the regular expression. This does not appear to be the case here, given the variety of reg-ex's noted for Zinc fingers and MDRs. As far as I can tell, this is likely due to the way that individual trees can be recombined, but it is not clear from the text how different length reg-exes result.Clarification of how different length regexes result would be useful.
+Again I acknowledge that this is not the place to detail the full inner-workings of the PILGram algorithm, and the example in the text for BMI is useful. However, most genetic algorithms have a defined chromosome length defining the solution. I would have expected an analogous situation for PILGram, in that one would have to define the **length** of the regular expression. This does not appear to be the case here, given the variety of reg-ex's noted for Zinc fingers and MDRs. As far as I can tell, this is likely due to the way that individual trees can be recombined, but it is not clear from the text how different length regexes result.Clarification of how different length regexes result would be useful.
 
 #### Physiochemical Properties and TMR
 
@@ -125,7 +125,7 @@ This implies that regular expressions in PROSITE and hidden markov models are no
 
 In fact, from the description in the manuscript, PILGram generates regular expressions that in some cases are very similar to those used by PROSITE. It seems currently unclear as to how generating regular expressions using PILGram is a "linguistic" approach, but aligning and finding common features (as in PROSITE or HMMs) is not.  
 
-I understand that PILGram is able to generate discriminative reg-exes without alignment first, and that is very useful (as exemplified by this manuscript), but from the current description that does not make it "linguistic". I admit I may be missing something in reading the current text in this area, as I am not a linguist.
+I understand that PILGram is able to generate discriminative regexes without alignment first, and that is very useful (as exemplified by this manuscript), but from the current description that does not make it "linguistic". I admit I may be missing something in reading the current text in this area, as I am not a linguist.
 
 ## Other Simple Improvements to Text
 
