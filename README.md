@@ -42,10 +42,13 @@ These reservations fall under these major areas:
 * lack of description in the text leading to either lack of clarity or possible misunderstandings
   * length of generated reg-exes
   * description of reg-exes in general
-  * justification of PP-PRE and TMR-PRE extensions to PRE, as well as match and score generation, 
+  * justification of PP-PRE and TMR-PRE extensions to PRE, as well as match and score generation
+  * elaboration of clustering, maybe adding to methods
   * supplemental table 1 needs **more** description
 
 * language implying other methods are not "linguistic"
+
+* Weak "substrate specificity" claim
   
 Each of these reservations are further detailed below.
 
@@ -90,6 +93,7 @@ I would have expected an analogous situation for PILGram, in that one would have
 **length** of the regular expression. This does not appear to be the case here, given the variety
 of reg-ex's noted for Zinc fingers and MDRs. As far as I can tell, this is likely due to the way that individual trees
 can be recombined, but it is not clear from the text how different length reg-exes result.
+Clarification of how different length regexes result would be useful.
 
 #### Describing REGEXE's
 
@@ -106,7 +110,7 @@ between the PROSITE pattern and the PILGram derived pattern. But also having exa
 for the Zinc finger showing the attributes shown, or describing what part of the regex
 encodes which features would help a lot.
 
-#### Physichemical Properties and TMR
+#### Physiochemical Properties and TMR
 
 I think I understand why the physiochemical properties (PP) and transmembrane region (TMR)
 score were included for the MDRPred,
@@ -127,6 +131,21 @@ are needed.
 * Example of calculation of PP score and TMR score for a regex match
 
 * Example of full match for a derived PP-PRE or TMR-PRE
+
+#### Elaboration of clustering
+
+In the "Results", "Functional motifs identified", a description of clustering the 
+generated models is provided. The current
+description is ambiguous. I think what was done was a vector of length 71 
+(corresponding to the number of training sequences) was generated for each model,
+with a 1 indicating a match to the model, and 0 indicating no match to the model.
+These 36 vectors (one for each model) were subsequently clustered using hierarchical clustering. 
+
+No description of what distance metric was used to calculate the distance between the 
+model vectors, nor which hierachical clustering method was used is provided. 
+In the R stats package, there are: two variations of Ward's minimum variance method, the complete
+linkage method, the single linkage method, median, and centroid. The software, version,
+and algorithm reference should be provided for completeness.
 
 #### Supplemental Table 1
 
@@ -161,7 +180,23 @@ I understand that PILGram is able to generate discriminative reg-exes without al
 first, and that is very useful (as exemplified by this manuscript), but from the current
 description that does not make it "linguistic". 
 
+### Weak "substrate specificity" claim
+
+This is mentioned in the abstract, and 2 times in the introduction. The wording
+in the abstract implies that the method is able to delineate substrate specificity,
+i.e. that the method can generate regexes that are specific for different substrates.
+However, the one result implies rather that the regexes identify the region responsible
+for substrate specificity. These seem to be two different things in my mind, and
+I think either the claim in the abstract and introduction should be dropped or clarified,
+especially given that there is only one example provided.
+Finally, the claim is weakened in the current text because the word **substrate** is
+missing from the paragraph discussing the evidence for substrate specificity (Results, 
+Drug reistance transporters, Functional motifs identified, last paragraph in that section,
+no mention of "substrate", just specificity).
+
 ## Other Simple Improvements to Text
+
+**Results**, "Functional motifs identified", last paragraph, there is 
 
 **Methods**, under PILGram, first sentence, a reference is missing to SIEVE.
 
