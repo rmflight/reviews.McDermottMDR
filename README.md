@@ -1,7 +1,6 @@
 # Review
 
-This is my review of JE McDermott et al., *Prediction of multi-drug resistance transporters using a novel sequence analysis method*,
-F1000Research 2015, doi: [10.12688/f1000research.6200.1](http://dx.doi.org/10.12688/f1000research.6200.1), version 1
+This is my review of JE McDermott et al., *Prediction of multi-drug resistance transporters using a novel sequence analysis method*, F1000Research 2015, doi: [10.12688/f1000research.6200.1](http://dx.doi.org/10.12688/f1000research.6200.1), version 1. Submitted to F1000Research on March 18, 2015. 
 
 ## Decision
 
