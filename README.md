@@ -97,6 +97,8 @@ In the **Results**, "Functional motifs identified", a description of clustering 
 
 No description of what distance metric was used to calculate the distance between the model vectors, nor which hierachical clustering method was used is provided. In the R stats package, there are: two variations of Ward's minimum variance method, the complete linkage method, the single linkage method, median, and centroid. The software, version, and algorithm reference should be provided for completeness.
 
+Supplemental Figure 4 should have the clusters indicated on the figure (boxes or something).
+
 #### Supplemental Table 1
 
 I believe supplemental table 1 could benefit from including:
@@ -125,7 +127,7 @@ In fact, from the description in the manuscript, PILGram generates regular expre
 
 I understand that PILGram is able to generate discriminative regexes without alignment first, and that is very useful (as exemplified by this manuscript), but from the current description that does not make it "linguistic". I admit I may be missing something in reading the current text in this area, as I am not a linguist.
 
-## Other Simple Improvements to Text
+## Other Simple Improvements
 
 **Methods**, under PILGram, first sentence, a reference is missing to SIEVE.
 
